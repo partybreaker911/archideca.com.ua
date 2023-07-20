@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Archideca</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
+<style>
+    #carouselExample {
+        margin-top: 0; /* Убран верхний отступ */
+        margin-bottom: 0; /* Убран нижний отступ */
+      }
+    
+      .carousel-inner {
+        height: calc(66.66667vh); /* Высота баннера (2/3 экрана) */
+      }
+    
+      .carousel-item img {
+        object-fit: cover; /* Сжимать изображение, чтобы оно полностью заполнило слайд */
+        width: 100%;
+        height: 100%;
+      }
+      
+        /* Стили для затемняющего слоя */
+        .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.5); /* Цвет затемнения (черный с прозрачностью 0.5) */
+        }
+</style>
+</head>
+
+<body>
+  <header>
+    <div class="mb-1">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+              <!-- Logo -->
+              <a class="navbar-brand" href="#">Your Logo</a>
+          
+              <!-- Contact Info -->
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <span class="nav-link"><i class="bi bi-envelope-fill"></i>
+                    contact@example.com</span>
+                </li>
+                <li class="nav-item">
+                  <span class="nav-link"><i class="bi bi-telephone-fill"></i>
+                    +1 123-456-7890</span>
+                </li>
+              </ul>
+          
+              <!-- Language Dropdown -->
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Language
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                  <li><a class="dropdown-item" href="#">English</a></li>
+                  <li><a class="dropdown-item" href="#">Español</a></li>
+                  <li><a class="dropdown-item" href="#">Français</a></li>
+                  <!-- Add more language options as needed -->
+                </ul>
+              </div>
+            </div>
+        </nav>
+        
+          <!-- Second Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+              <!-- Navbar Brand -->
+          
+              <!-- Navbar Toggler and Collapsible Content -->
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        
+              <!-- Navbar Links -->
+              <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                  </li>
+                  <!-- Add more menu items as needed -->
+                </ul>
+              </div>
+            </div>
+        </nav> 
+    </div>
+  </header>
+  <main>
+    <div class="container-fluid p-4"> <!-- Добавлен класс p-0 для удаления отступов по бокам -->
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="d-flex align-items-center justify-content-center"> <!-- Использование d-flex и align-items-center для отцентровки изображения -->
+                      <img src="../../static/images/banner.jpg" class="img-fluid d-block w-100" alt="Your Image">
+                      <div class="overlay"></div> <!-- Затемняющий слой -->
+                    </div>
+                    <div class="carousel-caption d-none d-md-block d-flex justify-content-center align-items-center"> <!-- Применение d-flex, justify-content-center и align-items-center для отцентровки текста -->
+                        <div>
+                          <h3>МЫ ПОМОЖЕМ ВАМ</h3>
+                          <h4>ПОСТРОИТЬ ДОМ ВАШЕЙ МЕЧТЫ!</h4>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+      </div>
+    <!-- Форма Закажите бесплатную консультацию специалиста и номер телефона -->
+    <div class="container mt-4">
+        <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h2 class="text-center">Закажите бесплатную консультацию специалиста</h2>
+            <form>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Номер телефона</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Введите номер телефона">
+            </div>
+            <button type="submit" class="btn btn-primary">Отправить</button>
+            </form>
+        </div>
+        </div>
+    </div>
+<div class="container mt-4">
+    <div class="col-12">
+        <div class="row">
+            <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="row">
+            <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

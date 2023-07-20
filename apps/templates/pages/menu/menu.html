@@ -1,0 +1,13 @@
+<ul>
+    {% for item in menu_items %}
+      {% if item.parent %}
+        {% continue %} <!-- Skip nested items since they will be rendered by their parents -->
+      {% endif %}
+      <li>
+        <a href="{{ item.url }}">{{ item.name }}</a>
+        {% if item.menuitem_set.all %}
+          {% include "submenu.html" with items=item.menuitem_set.all %}
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>

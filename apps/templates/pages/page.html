@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="card">
+    <div class="card-header">
+
+    </div>
+    <div class="card-body">
+        <div class="card-content">
+            <h1>{{ page }}</h1>
+            <p>{{ page.content|safe }}</p>
+            <p>Tag: {{ page.tag }}</p>
+            <p>Timestamp: {{ page.timestamp }}</p>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+
+{% block inline_javascript %}
+<script src="{% static 'tinymce/js/prism.js' %}"></script>
+
+{% endblock inline_javascript %}
+    
